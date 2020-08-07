@@ -1,0 +1,241 @@
+body{
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+}
+a:link, a:active, a:visited{
+	color: #315e8a;
+	text-decoration: none;/*nenhuma decoração*/
+}
+a:hover{
+	text-decoration: underline;/*coloca o sublinhado ao passar o mouse*/
+}
+
+/**Grid de 960px*/
+.linha{
+	width: 960px; /*960/12=80*/
+	margin: 0 auto;
+	overflow: auto;
+	padding: 5px 0;/*5px no top e botton e 0px para right e left*/
+	text-align: justify;
+}
+.coluna{
+	padding: 0 10px;/*80-10-10=60px	 10px de cada lado*/
+	float: left; /*todas as colunas vão flutuar à esquerda para não correr risco de ficar empilhadas*/
+}
+.col1{
+	width: 60px;
+}
+.col2{
+	width: 140px;
+}
+.col3{
+	width: 220px;
+}
+.col4{
+	width: 300px;
+}
+.col5{
+	width: 380px;
+}
+.col6{
+	width: 460;
+}
+.col7{
+	width: 540px;
+}
+.col8{
+	width: 620px;
+}
+.col9{
+	width: 700px;
+}
+.col10{
+	width: 780px;
+}
+.col11{
+	width: 860px;
+}
+.col12{
+	width: 940px;
+}
+/*Estilos reutilizáveis*/
+.sem-padding{
+	padding: 0 !important; /*mesmo impedindo ele força a utilização*/
+}
+.sem-marcador{
+	margin: 0 !important;
+}	
+h1, h2, h3{
+	font-weight: 500; /*peso da fonte*/	
+	margin: 15px, 0 10px 0;
+}
+ul li, ol li{
+	margin-bottom: 5px;
+}
+ul.inline li, ol.inline li{
+	display: inline; /*mostar o menu em linha horizontal*/
+	margin-right: 25px; /*aumenta a distância dos itens na navbar*/
+}
+ul.inline li:last-child, ol.inline li:last-child{
+	margin-right: 0;
+}
+ul.sem-marcador, ol.sem-marcador{
+	list-style: none;/*Não é para aparecer o marcador na frente da lista*/
+}
+a.botao, input.botao{
+	background: #1f3c58;
+	padding: 5px 10px;
+	border-radius: 3px;/*Arredonda os cantos dos botões*/
+	color: #ebebeb; /*cor da fone do botão - branca*/
+	cursor: pointer; /*Cursor ao passar em cima do botão*/
+	margin-right: 5px 0; /*5 em cima e 0 para os lados*/
+	display: inline-block;/*mostrar em linha mas ser um bloco */
+	border: none; /*Não ter nenhuma borda nesses botões*/
+}
+a.botao:hover, input.botao:hover{
+	background: #315e8a; /*Ao passr o mouse fica na mesma cor dos  links*/
+	text-decoration: none;/*Para não ficar o sublinhado nos links dos botões*/
+}
+img{
+	max-width: 100%;
+	height: auto;/*As imagens se encaixam dentro do nosso layout*/
+}
+p{
+	align-text:justify;
+}
+
+/*Layout dos site*/
+.header{
+	background: #dee3e6; /*Cor de fundo da div header*/
+}
+h1.logo{/*Nome na barra*/
+	font-weight: 300px;
+	color: #315e8a; /*Mesma cor dos links e dos botões*/
+	letter-spacing: -2px; /*Espaçamento das letras - negativo diminui esse espaço*/
+}
+.conteudo-extra{
+	background: #f1f2ea;
+}
+.footer{
+	background: #1f3c58; /*A mesma do botão*/
+	color: #ebebeb; /*Mesma cor da fonte do botão - branca*/
+	padding: 20px 0px; /*em cima e embaixo*/
+	text-align: center; /*texto centralizado*/
+	font-weight: 100;/*o peso da letra - pequena*/
+}
+.menu{/*o menu da navbar*/
+	text-transform: uppercase;/*tudo maiúsculo*/
+	text-align: right;
+	margin-top: 25px;
+}
+.menu li a{
+    padding: 5px 10px;
+    border-radius: 3px;  
+}
+.menu li a:hover{ /*Coloca uma cor no fundo das letras do menu*/
+	text-decoration: none; /*Para não ficar o sublinhado no menu*/
+	background: #1f3c58; /*A mesma do botão*/
+	color: #ebebeb;/*Mesma cor dos links e dos botões*/
+}
+ul.noticias li{
+	clear: both; /*Limpar as flutuações*/
+	display: block; /**/
+	overflow: hidden; /*Ocultar o conteúdo excedente*/
+	margin-bottom: 20px; /*Uma margem de 20px na parte debaixo de cada li*/ 
+}
+ul.noticias li img{ 
+	width: 70px; /*largura para a imagem*/
+	height: auto; /*altura automatica para a igem*/
+	margin-right: 10px; 
+	float: left; 
+}
+ul.noticias li h4{
+	margin: -2px 0 5px 0;
+	font-weight: 500;
+}
+ul.noticias li p{
+	margin: 5px 0;
+	font-weight: 300;
+	text-align: justify;
+}
+ul.noticias li p a{
+	font-weight: 500;
+}
+
+.contato label{
+	display: block;
+	font-size: 13px;
+	font-weight: 300;
+}
+.contato input, .contato textarea{
+	display:block;
+	margin-bottom: 15px;
+	padding: 5px 2%;
+	width: 96%
+}
+
+.contato textarea{
+	height: 150px;
+}
+.contato input.botao{
+	width: auto;
+}
+
+table.greenTable {
+  font-family: Verdana, Geneva, sans-serif;
+  border: 6px solid #2B1894;
+  background-color: ##ebebeb;
+  width: 100%;
+  text-align: center;
+}
+table.greenTable td, table.greenTable th {
+  border: 4px solid #24943A;
+  padding: 3px 2px;
+}
+table.greenTable tbody td {
+  font-size: 15px;
+}
+table.greenTable thead {
+  text-align: center;
+  background: #315E8A;
+  background: -moz-linear-gradient(top, #6486a7 0%, #456e95 66%, #315E8A 100%);
+  background: -webkit-linear-gradient(top, #6486a7 0%, #456e95 66%, #315E8A 100%);
+  background: linear-gradient(to bottom, #6486a7 0%, #456e95 66%, #315E8A 100%);
+  border-bottom: 0px solid #444444;
+}
+table.greenTable thead th {
+  font-size: 19px;
+  font-weight: bold;
+  color: #F0F0F0;
+  text-align: left;
+  border-left: 2px solid #150BC6;
+}
+table.greenTable thead th:first-child {
+  border-left: none;
+}
+
+table.greenTable tfoot {
+  font-size: 13px;
+  font-weight: bold;
+  color: #F0F0F0;
+  background: #315E8A;
+  background: -moz-linear-gradient(top, #6486a7 0%, #456e95 66%, #315E8A 100%);
+  background: -webkit-linear-gradient(top, #6486a7 0%, #456e95 66%, #315E8A 100%);
+  background: linear-gradient(to bottom, #6486a7 0%, #456e95 66%, #315E8A 100%);
+  border-top: 1px solid #24943A;
+}
+table.greenTable tfoot td {
+  font-size: 13px;
+}
+table.greenTable tfoot .links {
+  text-align: right;
+}
+table.greenTable tfoot .links a{
+  display: inline-block;
+  background: #FFFFFF;
+  color: #ED5221;
+  padding: 2px 8px;
+  border-radius: 5px;
+}
+
+./*referencia uma classe*/
